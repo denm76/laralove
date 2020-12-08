@@ -12,16 +12,23 @@ nav{
 }
 
 .card-img{
-    height: 200px;
+    height: 20rem;
+    width: 30rem;
     background-position: center center;
     background-size:cover;
     background-repeat: no-repeat;
-    width: 30rem;
+    margin-bottom: 10px;
 }
-.card-img,card-author{
+.card-img-top, .card-author, .card-date{
     margin-bottom: 10px;
 }
 
 .center{
     text-align: center;
 }
+
+
+.card-btn a{
+    margin-right: 10px;
+}
+
