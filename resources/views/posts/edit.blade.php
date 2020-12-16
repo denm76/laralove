@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.layout',['title'=>"Редактирование поста $post->post_id"])
 
 @section('content')
 
@@ -7,7 +7,7 @@
     @method('PATCH')
     <h3>Редактировать пост</h3>
     @include('posts.parts.form')
-    <input type="submit" value="Редактировать пост" class="btn btn-outline-success">
+    <input type="submit" value="Закончить" class="btn btn-outline-success">
 </form>
 
 

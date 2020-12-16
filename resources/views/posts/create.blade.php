@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.layout',['title'=>"Создание поста "])
 
 @section('content')
 
