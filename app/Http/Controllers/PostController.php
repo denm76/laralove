@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\PostRequest;
 use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -51,7 +52,7 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     //создание поста с сохранением картинки
-    public function store(Request $request)
+    public function store(PostRequest $request)
     {
         $post=new Post();
         $post->title=$request->title;
@@ -102,7 +103,7 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(PostRequest $request, $id)
     {
         $post=Post::find($id);
         $post->title=$request->title;
